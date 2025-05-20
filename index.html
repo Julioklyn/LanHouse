@@ -63,7 +63,7 @@
           </ul>
         </nav>
 
-        <a href="#" class="btn">Login</a>
+        <a href="#" class="btn" id="openLogin">Login</a>
 
         <button class="search-btn" id="searchToggle" aria-label="Buscar">
           <ion-icon name="search-outline"></ion-icon>
@@ -96,7 +96,26 @@
         <source src="assets/videos/Video-game_Monitor_1920x1080.mp4" />
       </video>
     </section>
+    
+    <!--Sobre-->
 
+    <section class="section about" aria-label="sobre" id="sobre">
+      <div class="container-sobre">
+        <figure class="about-banner">
+          <img src="assets/img/noot.jpg" alt="Mão segurando um controle de videogame " class="w-100 efeito" />
+        </figure>
+        <div class="about-content">
+          <p class="section-subtitle">Sobre The Game</p>
+          <h2 class="h2 text-center">Onde a diversão nunca para</h2>
+          <p class="section-text-1">
+            Bem-vindo à Lan House The Game, o lugar perfeito para gamers e entusiastas de tecnologia. Aqui, você encontra um ambiente moderno, equipado com os melhores consoles, PCs de alta performance e experiências imersivas em realidade virtual. Venha jogar, competir e se conectar com outros apaixonados por games!
+          </p>
+          <a href="#" class="btn">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <!--Imagem Galeria-->
     <section class=" section gallery id ="Sobre">
       <div class="container-galeria">
         <p class="section-subtitle text-center">Nosso Trabalho</p>
@@ -116,11 +135,12 @@
         </a>
       </div>
 
-      <!--LIGHTBOX-->
-      <div class="lightbox" id="lightbox">
-        <img src="" alt="imagem ampliada" id="lightbox-img"/>
-      </div>
-    </section>
+        <!--LIGHTBOX-->
+        <div class="lightbox" id="lightbox">
+          <img src="" alt="imagem ampliada" id="lightbox-img"/>
+        </div>
+      </section>
+     
 
     <!--SERVIÇOS-->
     <section class="section service" arial-label="service">
@@ -210,6 +230,7 @@
     <section class="container-login">
       <div class="wrapper">
         <div class="form-box login">
+          
           <h2>Login</h2>
 
           <form action="#">
