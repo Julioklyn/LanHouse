@@ -229,32 +229,80 @@
     <!--LOGIN-->
     <section class="container-login">
       <div class="wrapper">
+        <span class="bg-animate"></span>
+        <span class="bg-animate2"></span>
+
         <div class="form-box login">
-          
-          <h2>Login</h2>
+          <h2 class="animation">Login</h2>
 
           <form action="#">
-            <div class="input-box">
+            <div class="input-box animation">
               <input type="text" required/>
               <label>Usúario</label>
               <ion-icon name="person"></ion-icon>
             </div>
 
-            <div class="input-box">
-              <input type="text" required/>
+            <div class="input-box animation">
+              <input type="password" required/>
               <label>Senha</label>
               <ion-icon name="lock-closed"></ion-icon>
             </div>
 
-            <button type="submit" class="btn btn-login">Entrar</button>
+            <button type="submit" class="btn btn-login animation">Entrar</button>
             
-            <div class="logreg-link">
+            <div class="logreg-link animation">
               <p>
                   Não possui uma conta ?
                   <a href="#" class="register-link">Clique aqui!</a>
               </p>
             </div>
           </form>
+        </div>
+
+        <!--texto login -->
+        <div class="info-text login">
+          <h2>Bem-vindo de volta!</h2>
+          <p>Conecte-se e aproveite o melhor do mundo dos games!</p>
+        </div>
+
+        <!--Cadastro-->
+        <div class="form-box register">
+          <h2>Criar Conta</h2>
+
+          <form action="#">
+            <div class="input-box">
+              <input type="text" required/>
+              <label>nome</label>
+              <ion-icon name="person"></ion-icon>
+            </div>
+
+            <div class="input-box">
+              <input type="text" required/>
+              <label>Email</label>
+              <ion-icon name="person"></ion-icon>
+            </div>
+
+            <div class="input-box">
+              <input type="password" required/>
+              <label>Senha</label>
+              <ion-icon name="lock-closed"></ion-icon>
+            </div>
+
+            <button type="submit" class="btn btn-login">Cadastrar</button>
+            
+            <div class="logreg-link">
+              <p>
+                  Já possui uma conta ?
+                  <a href="#" class="login-link">Clique aqui!</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <!--texto cadastro -->
+        <div class="info-text register">
+          <h2> Seja Bem-vindo!</h2>
+          <p>Conecte-se e aproveite o melhor do mundo dos games!</p>
         </div>
       </div>
     </section>

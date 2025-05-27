@@ -1,4 +1,4 @@
-/*=============== copyright 2025 Mari & Denny ===============*/
+/*=============== copyright 2025 Julio ===============*/
 
 /*-----------------------------------*\
   #VARIÁVEIS
@@ -656,6 +656,8 @@ transition: background 0.3s, color 0.3s;
   height: 450px;
   background: transparent;
   border: 2px solid var(--accent-cyan);
+  overflow: hidden;
+  background-color: black;
 }
 
 .wrapper .form-box {
@@ -666,7 +668,6 @@ transition: background 0.3s, color 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: black;
 }
 
 .form-box h2 {
@@ -690,6 +691,7 @@ transition: background 0.3s, color 0.3s;
   border-bottom: 2px solid var(--white-color);
   color: var(--white-color);
   font-size: 16px;
+  padding-right: 23px;
 }
 
 .input-box label {
@@ -700,6 +702,7 @@ transition: background 0.3s, color 0.3s;
   color: var(--white-color);
   transform: translateY(-50%);
   transition: 0.5s;
+  pointer-events: none;
 }
 
 .input-box ion-icon {
@@ -710,6 +713,142 @@ transition: background 0.3s, color 0.3s;
   color: var(--white-color);
   transform: translateY(-50%);
   transition: 0.5s;
+}
+
+.btn-login {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  transform: scale(1.05) !important;
+}
+
+.form-box .logreg-link {
+  font-size: 14px;
+  color: var(--white-color);
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+.logreg-link {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.logreg-link p {
+  display:flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.logreg-link p a {
+  color: var(--accent-cyan);
+  font-weight: var(--weight-semiBold);
+}
+
+.logreg-link p a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .form-box.login {
+  left: 0;
+  padding: 0 60px 0 40px;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+  color: var(--accent-purple);
+}
+
+.input-box input:focus ~ ion-icon,
+.input-box input:valid ~ ion-icon {
+  top: -5px;
+  color: var(--accent-cyan);
+}
+
+.wrapper .info-text {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper .info-text.login {
+  right: 0;
+}
+
+.info-text h2 {
+  font-size: 32px;
+  color: var(--white-color);
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.info-text p {
+  font-size: 16px;
+  color: var(--white-color);
+}
+
+.wrapper .info-text.login {
+  right: 0;
+  text-align: right;
+  padding: 0 40px 0 100px;
+}
+
+.wrapper .bg-animate {
+  position: absolute;
+  background: var(--gradient1);
+  top: 0;
+  right: 0;
+  width: 850px;
+  height: 600px;
+  transform: rotate(10deg) skewY(40deg); 
+  transform-origin: bottom right;
+  border-bottom: 3px solid var(--accent-cyan);
+}
+
+.wrapper .bg-animate2 {
+  position: absolute;
+  background: black;
+  top: 100%;
+  left: 250px;
+  width: 850px;
+  height: 700px;
+  /*transform: rotate(-11deg) skewY(-41deg);*/
+  transform: rotate(0deg) skewY(0deg);
+  transform-origin: bottom left;
+  border-bottom: 3px solid var(--accent-cyan);
+  
+}
+
+.wrapper .form-box.register {
+  right: 0%;
+  padding: 0 40px 0 60px;
+  display: none;
+}
+
+.wrapper .info-text.register {
+  left: 0;
+  text-align: left;
+  padding: 0 150px 0 40px;
+  display: none;
+}
+
+.wrapper.active .form-box.login .animation {
+  transform: translateX(-120%);
+}
+
+.wrapper .form-box.login .animation {
+  transition: 0.7s ease;
+  transform: translateX(0);
 }
 
 /*---------------------------------------*\
