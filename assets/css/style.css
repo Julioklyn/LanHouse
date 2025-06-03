@@ -248,7 +248,7 @@ body {
   #HEADER 
 \*-----------------------------------*/
 .logo img {
-  width: 160px;
+  width: 110px;
   height: auto;
   object-fit: contain;
   display: block;
@@ -851,6 +851,20 @@ transition: background 0.3s, color 0.3s;
   transform: translateX(0);
 }
 
+.wrapper.active .form-box.login .animation {
+  transform: translateX(-120%);
+  transition-delay: calc(0.1s * var(--i));
+}
+
+.wrapper .info-text.login .animation {
+  transition: 0.7s ease;
+  transform: translateX(0);
+}
+
+.wrapper.active .info-text.login .animation {
+  transform: translateX(120%);
+  transition-delay: calc(0.1s * var(--i));
+}
 /*---------------------------------------*\
   #                 SOBRE
 \*---------------------------------------*/
